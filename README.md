@@ -445,9 +445,6 @@ Ja rækkefølge giver mening. Det eneste der er i sektionen content i hver af de
 
 Ellers er den meget let og forståligt.
 
-
-
-
 ---
 
 # Opgave 6 – Undersøg headingstrukturen
@@ -765,6 +762,10 @@ Undersøg navigationen og vurder:
 - Er designet afhængigt af farve alene?
 
 > Det er ikke automatisk en accessibility-fejl at fjerne understregningen fra links i en tydelig navigation. Du skal vurdere linkets kontekst.
+
+## Undersøgelse
+
+
 
 ---
 
@@ -1847,18 +1848,90 @@ Responsive webdesign vurderes manuelt med Device Toolbar og zoom-test.
 Besvar kort:
 
 1. Hvad var Accessibility-score før og efter?
+```text
+Før var scoren 67 og efter 100
+```
+  
+
 2. Hvilke accessibility-problemer fandt Lighthouse?
+```text
+Der var fire problemer:
+  1. Billedeelementer har ikke alt-antributter
+  2. farverne i baggrunden og forgrunden har ikke nok kontrastforhold.
+  3. Berøringsområderne størrelse eller afstand er ikke tilfredsstillende
+  4. Dokumentet har ikke et primært landmark
+```
+
+
 3. Hvilke accessibility-problemer krævede manuel kontrol?
+![This is an alt text.](/images/manuelkontrol.png "This is a sample image.")
+
+
+
 4. Hvilke semantiske HTML-ændringer foretog du?
+```text
+Jeg ændrende div tag til bla. header-tag, nav-tag i toppen af dokumentet.
+
+Jeg ændrende div-tagget for content til en section, og de tre elementer med div-tag i, til articles.
+
+og så ændrende jeg benefits div-tag til en aside.
+```
+
 5. Hvilke CSS-regler blev overflødige efter HTML-ændringerne?
+```text
+
+```
+
+
 6. Hvad var Performance-score før og efter?
+```text
+
+```
+
+
 7. Hvilke billeder optimerede du?
+```text
+
+```
+
+
 8. Hvor meget blev filstørrelserne reduceret?
+```text
+
+```
+
+
 9. Hvilke elementer gjorde du til flex-containere?
+```text
+
+```
+
+
 10. Hvilke gamle floats kunne fjernes?
+```text
+
+```
+
+
 11. Hvilket breakpoint valgte du, og hvorfor valgte du netop dette?
+```text
+
+```
+
+
 12. Hvordan ændrer layoutet sig på en mobil skærm?
+```text
+
+```
+
+
 13. Hvad sker der ved 200 % zoom?
+```text
+
+```
+
+
+
 
 ---
 
@@ -1866,20 +1939,20 @@ Besvar kort:
 
 ## DEL 1 – Web Accessibility
 
-- [ ] Accessibility-baseline er dokumenteret.
-- [ ] `<title>` er beskrivende.
-- [ ] `<meta name="viewport">` er tilføjet.
-- [ ] Semantisk HTML er anvendt.
-- [ ] Rene layout-wrappers bruger et passende neutralt element, fx `<div>`.
-- [ ] Eksisterende CSS-selectors er kontrolleret og tilpasset efter semantiske HTML-ændringer.
-- [ ] Navigationen bruger et passende semantisk HTML-element.
-- [ ] Navigationen vises uden bullets og med horisontale menupunkter på større skærme.
-- [ ] Dokumentstrukturen er logisk.
-- [ ] Headingstrukturen er logisk.
-- [ ] Informative billeder har relevante `alt`-tekster.
-- [ ] Dekorative billeder bruger `alt=""`.
-- [ ] Anchor-links fungerer.
-- [ ] Horiseon-logoet fungerer som link til `index.html`.
+- [x] Accessibility-baseline er dokumenteret.
+- [x] `<title>` er beskrivende.
+- [x] `<meta name="viewport">` er tilføjet.
+- [x] Semantisk HTML er anvendt.
+- [x] Rene layout-wrappers bruger et passende neutralt element, fx `<div>`.
+- [x] Eksisterende CSS-selectors er kontrolleret og tilpasset efter semantiske HTML-ændringer.
+- [x] Navigationen bruger et passende semantisk HTML-element.
+- [x] Navigationen vises uden bullets og med horisontale menupunkter på større skærme.
+- [x] Dokumentstrukturen er logisk.
+- [x] Headingstrukturen er logisk.
+- [x] Informative billeder har relevante `alt`-tekster.
+- [x] Dekorative billeder bruger `alt=""`.
+- [x] Anchor-links fungerer.
+- [x] Horiseon-logoet fungerer som link til `index.html`.
 - [ ] Links kan identificeres.
 - [ ] Farvekontrast er kontrolleret.
 - [ ] Tastaturtest er gennemført.
