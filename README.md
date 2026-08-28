@@ -162,7 +162,7 @@ Hvis du ændrer siden først, har du ingen baseline at sammenligne med.
 
 #### Før
 eksempel:
-```
+```html
 <img src="./images/search-engine-optimization.jpg"  class="float-left" />
 ```
 
@@ -171,7 +171,7 @@ eksempel:
 Tilføjet manglende alt tekster til hver img
 
 eksempel:
-```
+```html
 <img src="./images/search-engine-optimization.jpg" alt="På et skrivebord ligger en notesbord, hvor der på siden er tegnet en figur. Seo står i midten og rundt om der der tegnet kendetegn ved seo" class="float-left" />
 ```
 
@@ -245,6 +245,13 @@ En titel bør kort beskrive både websitet og sidens vigtigste indhold.
 ```
 
 Formulér selv en passende titel til Horiseon.
+
+## Efter ændringer
+```html
+<title>Horiseon | Seo, online reputation management og social media marketing</title>
+```
+
+
 
 ---
 
