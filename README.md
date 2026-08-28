@@ -128,8 +128,11 @@ Inden du ændrer noget i koden, skal du måle sidens nuværende Accessibility-sc
 7. Gem gerne et screenshot.
 
 ```text
-Accessibility før forbedringer: ______
+Accessibility før forbedringer: __67___
 ```
+!["Screenshot af lighthouse analyse af Accessibility med en score på 67](/images/opg1a.png "Screenshot af lighthouse analyse af Accessibility med en score på 67")
+
+
 
 > Din præcise Lighthouse-score kan variere lidt afhængigt af Chrome/Lighthouse-version og testmiljø. Det vigtige er, at du registrerer **din egen baseline**, før du ændrer koden, og bruger samme testopsætning ved eftermålingen.
 
