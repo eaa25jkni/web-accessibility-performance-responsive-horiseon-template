@@ -284,6 +284,27 @@ Viewport-indstillingen har betydning for:
 - zoom
 - reflow
 
+
+## Efter ændringer
+Først tilføjede jeg:
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+Derefter ændrede jeg rækkefølgen på title og link, så link står til sidst i head.
+
+
+Så head endte med at se således ud:
+```html
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Horiseon | Seo, online reputation management og social media marketing</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+```
+
+
 ---
 
 # Opgave 4 – Forbedr den semantiske HTML
