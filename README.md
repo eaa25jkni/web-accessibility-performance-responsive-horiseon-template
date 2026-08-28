@@ -384,6 +384,13 @@ Undersøg både HTML'en og de eksisterende CSS-selectors. Starter-CSS'en indehol
 
 Sammenlign disse selectors med den HTML, der faktisk omgiver menuens `<ul>`.
 
+### Rettelse
+Flere div elementer er blevet rettet. Så nu er de semantisk rigtige. F.eks. har jeg ændret en div til en header, og en div til en nav. På den måde er vores header sektion korrekt semantisk nu. 
+
+Andre ændringer er f.eks div med class="content", har jeg ændret til en section element. 
+
+
+
 ### Krav til navigationen på større skærme
 
 Efter din semantiske rettelse skal navigationen:
@@ -394,6 +401,9 @@ Efter din semantiske rettelse skal navigationen:
 - bevare de tre eksisterende links
 
 > Pointen er både at vælge korrekt HTML-semantik og at forstå, hvorfor en CSS-selector kun virker, når den matcher den faktiske HTML-struktur.
+
+## efter rettelser
+Før kaldte css'en på et nav element som ikke fandtes. Derfor startede det med at stå i en kolonne og ikke i en række. Ved at ændre det fra en div til en nav element, bliver css nu kaldt og den styles rigtigt. 
 
 ---
 
