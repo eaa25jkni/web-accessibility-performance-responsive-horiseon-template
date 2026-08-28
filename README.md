@@ -427,6 +427,27 @@ Undersøg:
 
 > HTML-koden skal give mening uafhængigt af den visuelle styling.
 
+## undersøgelse
+- Kommer navigationen før hovedindholdet?
+Ja den kommer først.
+
+- Er hovedindholdet samlet?
+Ja det er det, det ligger i en main.
+
+- Er supplerende indhold placeret logisk?
+Ja først kommer hero, så content sektionen, så benefits sektionen og til sidst footer.
+
+- Kommer footeren sidst?
+Ja den ligger i bunden, som man ville forvente.
+
+- Kan siden forstås uden floats og visuel positionering?
+Ja rækkefølge giver mening. Det eneste der er i sektionen content i hver af de tre article kommer img før h2 titlen. Så med en screen reader ville læse billede før titlen overhoevdet kommer. Det kan virker forvirrende.
+
+Ellers er den meget let og forståligt.
+
+
+
+
 ---
 
 # Opgave 6 – Undersøg headingstrukturen
