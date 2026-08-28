@@ -711,6 +711,18 @@ Eksempel:
 
 Der er ikke behov for at tilføje `aria-label` til dette link, når den synlige linktekst allerede giver linket et meningsfuldt navn.
 
+
+## Ændringer
+I opg 1 tilføjede jeg beskrivende alt tekst til alle img tags i html. Men de kan forbedres.
+
+### alt tekster i content sektion
+I opgave 1 lavede jeg nogle lange og meget beskrivende alt-tekster på dansk, dem har jeg gjort kortere og mere præcise. Og så har jeg også oversat dem til engelsk så de passer til alt andet indhold.
+
+
+### alt tekster i benfits søjle
+Jeg havde en beskrivende alt tekst til alle billederne med ikonerne. Men ikoner er mere dekorative og tilføjer egenligt ikke noget ekstra for teksten. Derfor har keg valgt at deres alt tekst bare skal være dekorativ. alt=""
+
+
 ---
 
 # Opgave 9 – Undersøg om links kan identificeres visuelt
