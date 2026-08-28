@@ -13,6 +13,8 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+
+    
 }
 
 .header h1 {
@@ -29,21 +31,34 @@ body {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
+}
+
+#nav-liste {
+    display: flex;
+    gap: 32px;
 }
 
 .header nav ul {
     list-style-type: none;
+    
+    
 }
 
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    
+    
+    
+    
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
+    
+    
 }
 
 p {
@@ -83,7 +98,7 @@ p {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: #154b67;
 }
 
 .benefit-lead {

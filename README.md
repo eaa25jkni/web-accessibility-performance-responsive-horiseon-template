@@ -156,6 +156,66 @@ Hvis du ændrer siden først, har du ingen baseline at sammenligne med.
 5. Sammenlign
 ```
 
+## Ændringer
+
+### Alt antributter
+
+#### Før
+eksempel:
+```
+<img src="./images/search-engine-optimization.jpg"  class="float-left" />
+```
+
+#### Efter
+
+Tilføjet manglende alt tekster til hver img
+
+eksempel:
+```
+<img src="./images/search-engine-optimization.jpg" alt="På et skrivebord ligger en notesbord, hvor der på siden er tegnet en figur. Seo står i midten og rundt om der der tegnet kendetegn ved seo" class="float-left" />
+```
+
+
+
+### Farvekontrast
+
+#### Før
+![Screenshot af farvekontrast analyse lavet med strak værktøj før ændringer, som viser en dårlig score](/images/opg1farve-før.png "Screenshot af farvekontrast analyse lavet med strak værktøj før ændringer, som viser en dårlig score")
+
+Dårlig farvekontrast før ændringer. Den blå baggrundsfarve og den hvide tekst 
+
+![Screenshot af strak værktøj forslag til farve med en bedre kontrast](/images/opg1farve-efter.png "Screenshot af strak værktøj forslag til farve med en bedre kontrast")
+
+starks forslag til en farve, som har en god kontrast med teksten
+
+#### Efter
+Jeg har ændret farven til #154b67 i benefits søjlen
+
+
+### Optimale løsninger
+
+#### Før
+
+##### a
+Manglende primært landmark
+
+
+##### b
+I headeren står li elementerne i ul for tæt, så det svært for folk at trykke på.
+
+#### Efter
+
+##### a
+Jeg har tilføjet et main-element i min html, som manglede. Så nu ved den, hvor og hvad det vigtigste indhold er. 
+
+##### b
+Jeg har gjort teksten er blevet større og tilføjet en display flex og et gap.
+
+
+### Score efter ændringer
+![Screenshot af lighthouse analyse efter ændringer. Scoren er på 100 nu](/images/opg1score-efter.png "Screenshot af lighthouse analyse efter ændringer. Scoren er på 100 nu")
+
+
 ---
 
 # Opgave 2 – Giv siden en beskrivende `<title>`
