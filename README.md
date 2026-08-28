@@ -764,6 +764,20 @@ Undersøg navigationen og vurder:
 > Det er ikke automatisk en accessibility-fejl at fjerne understregningen fra links i en tydelig navigation. Du skal vurdere linkets kontekst.
 
 ## Undersøgelse
+- Er det tydeligt, at teksterne er links?
+Visuelt nej, hvis man tænker på et typisk link, da der ikke er en streg under. Men jakobs low træder ind, så vi ved godt at i en nav bar består af klikbare links. så der behøver faktisk ikke være en streg under.
+
+- Er links tydelige ved hover?
+Ja de er tydelige. der er cursor effekt på, så man ved de er klikbare.
+
+- Er links tydelige ved keyboard-fokus?
+Ja det er de. Der kommer en stor lysende boks/kant rundt om linket når man bruger tab.
+
+
+
+- Er designet afhængigt af farve alene?
+I dette tilfælde så nej. Samme princip som at der ikke behøver en underline. Når det er nav, så ved brugeren automatisk at det er links, så farven er ikke afgørende. Hvorimod hvis det var brød tekst, er det forventet at der enten er en underline eller linket er blåt.
+
 
 
 
