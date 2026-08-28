@@ -723,6 +723,27 @@ I opgave 1 lavede jeg nogle lange og meget beskrivende alt-tekster på dansk, de
 Jeg havde en beskrivende alt tekst til alle billederne med ikonerne. Men ikoner er mere dekorative og tilføjer egenligt ikke noget ekstra for teksten. Derfor har keg valgt at deres alt tekst bare skal være dekorativ. alt=""
 
 
+## Ændringer
+
+### Logo lavet til link
+For at lave logoet til et link har jeg tilføjet et ankerlink til index.html
+
+#### Efter
+```html
+<p class="logo">
+            <a href="index.html"> Hori<span class="seo">seo</span>n </a>
+        </p>
+```
+
+### Manglende id til search-engine-optimization article
+
+Før virkede ankerlinket ikke til search-engine-optimization fordi der manflede et id. Det tilføjede jeg.
+
+```html
+<article id="search-engine-optimization" class="search-engine-optimization">
+            
+```
+
 ---
 
 # Opgave 9 – Undersøg om links kan identificeres visuelt
