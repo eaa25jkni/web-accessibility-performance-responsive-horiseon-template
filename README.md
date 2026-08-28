@@ -541,6 +541,88 @@ CSS-selector / class
 → styrer styling og layout
 ```
 
+## Ændringer
+
+### logo h1 -> p
+
+#### Før
+Før var logo'et beskrevet med et h1-tag. Men logoet et egenligt bare en branding for virksomheden og ikke det relelle emne for hjemmside. Derfor bør den ikke have første priotet for en screenreader, som den ville få med en h1. Derfor laves den om til en p-tag.
+
+```html
+<h1>Hori<span class="seo">seo</span>n</h1>
+```
+
+```css
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+```
+
+#### Efter
+Efter er logoet skrevet med et p-tag, og har derfor en mindre priotet i hjemmesiden hieraki.
+
+```html
+<p>Hori<span class="seo">seo</span>n</p>
+```
+
+Css'en skulle også ændres da den før jo kaldte på en h1-tag. Nu kalder den på en p tag i header.
+```css
+.header p {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header p .seo {
+    color: #d9dcd6;
+}
+```
+
+### Tilføj h1 til webpage
+Hjemmesiden mangler en passende og beskrivende h1. Den tilføjer jeg i content-sektionen. Med den nye h1 ved den besøgende med det samme hvad hjemmesiden faktisk handler om.
+
+#### Efter
+```html
+<section class="content">
+        <h1>Digital marketing solutions for your company</h1>
+        
+        <article class="search-engine-optimization">
+            
+    ...
+```
+
+### Tilføj h2 til benefits
+Der manglede en passende overskrift til benefits søjlen. Den har jeg tilføjet. Nu kan læsere nemmere og hurtigere forstå.
+
+```html
+<aside class="benefits">
+        <h2>Benefits</h2>
+  ...
+```
+
+### Footer h2 -> p
+h2 er ikke et af hovedeemnerne, derfor burde den ikke være en h2. Den ændres derfor til en p. 
+
+### Resultater
+Efter at ændret h1 i logoet til en p-tag. Tilføjet en passende h1 og h2 til sektionerne, så vil hjemmesiden hieraki se således ud:
+
+```text
+h1 Digital marketing solutions for your company
+
+├── h2 Search Engine Optimization
+├── h2 Online Reputation Management
+├── h2 Social Media Marketing
+└── h2 Benefits
+    ├── h3 Lead Generation
+    ├── h3 Brand Awareness
+    └── h3 Cost Management
+
+```
+
 ---
 
 # Opgave 7 – Gennemgå billedernes `alt`-attributter
