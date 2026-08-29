@@ -2005,6 +2005,22 @@ Du skal kunne forklare:
 - hvorfor `.services` bruger `flex: 1`
 - hvorfor `aside.benefits` bruger `column`
 
+## Besvar spørgsmål
+- hvorfor `main.content` bruger Flexbox
+Den bruger flexbox, fordi det er `main.content`, som bestemmer forholdet mellem elementerne, h1, marketing og benefits. Ved at lave main.content til en flexbox, bliver de andre elementer til children af main.content, og retter sig derfor ind efter main.content.
+
+- hvorfor `.marketing` bruger `column`
+Det gør den fordi de tre article/services skal stå i en kolonne. De skal altså stå under hinanden. 
+
+- hvorfor `.services` bruger `flex: 1`
+Man bruger `flex: 1` på `.services`, fordi så fordeler de tre articles sig på den tilgængelige højde i .marketing
+
+
+- hvorfor `aside.benefits` bruger `column`
+Det gør den af samme princip som hvorfor .marketing gør. Det er fordi de tre artciles skal stå under hinanden, og det sker ved at bruge `flex-direction: column;` på `aside.benefits`
+
+
+
 ---
 
 # Opgave 26 – Tilføj ét CSS breakpoint med media query
