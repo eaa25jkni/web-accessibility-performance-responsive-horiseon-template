@@ -1002,6 +1002,106 @@ Fjern ikke CSS alene, fordi du ikke forstår reglen.
 
 Undersøg først, hvilken funktion den har.
 
+
+## Ændringer
+
+
+### Content sektion
+#### Før
+De tre bokse har helt samme styling og kan dermed samles i css.
+
+#### Efter
+```css
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    min-height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #025b92;
+    color: #ffffff;
+}
+```
+
+
+
+Det samme princip gælder også deres h2.
+
+```css
+.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+```
+
+
+Og deres styling af img, kan også samles.
+
+```css
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
+    max-height: 200px;
+}
+```
+
+
+
+
+### Benefits søjle
+#### Før
+```css
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #000000;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #000000;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #000000;
+}
+```
+
+
+De tre forskellige elementer har faktisk præcis samme styling. Samme margin-bottom og color. Derfor kan de godt samles.
+
+#### Efter
+```css
+.benefit-lead, .benefit-brand, .benefit-cost {
+    margin-bottom: 32px;
+    color: #000000;
+}
+```
+
+Dette princip er mange steder i css'en. Blandt andet også ved de tre benefit articles h3. De har alle samme styling og kan derfor samles til:
+
+
+
+```css
+.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+```
+
+
+Og det samme med deres img. Det kan også samles, fordi det har samme styling.
+
+```css
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+```
+
+
+
+```css
+```
+
 ---
 
 # DEL 2 – WEB PERFORMANCE
@@ -2048,10 +2148,10 @@ Før gik teksten ud over deres bokse. Det skete fordi indholdet blev højere end
 - [x] Keyboard-fokus er tydeligt.
 - [x] Siden er testet ved 200 % zoom.
 - [x] Faste højder er vurderet.
-- [ ] CSS er ryddet op.
+- [x] CSS er ryddet op.
 - [ ] HTML er valideret.
-- [ ] Lighthouse Accessibility er kørt igen.
-- [ ] Accessibility-score er 100.
+- [x] Lighthouse Accessibility er kørt igen.
+- [x] Accessibility-score er 100.
 
 ## DEL 2 – Web Performance
 
