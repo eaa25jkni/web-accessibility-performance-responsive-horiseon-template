@@ -806,6 +806,20 @@ background-color
 
 Forsøg at bevare Horiseons visuelle identitet.
 
+## Ændringer
+I opg 1 var en af problemere i min lighthouse analyse jeg fandt farvekonstrasten. Her ændrede jeg farven på baggrunden.
+
+### Nav
+![Farvekonstarst før og efter på nav.](/images/opg10nav.png "Farvekonstarst før og efter på nav.")
+
+### Content sektion
+![Farvekonstarst før og efter på content sektion.](/images/opg10content.png "Farvekonstarst før og efter på content sektion.")
+
+### Benefits søjle
+![Farvekonstarst før og efter på benefits søjle.](/images/opg10benefits.png "Farvekonstarst før og efter på benefits søjle.")
+
+Her ændre jeg farven på fonten til sort så det passer til ikonerne. Deridover har jeg gjort baggrunden til en lysere blå.
+
 ---
 
 # Opgave 11 – Test siden med tastatur
@@ -1878,7 +1892,7 @@ Der var fire problemer:
 
 
 3. Hvilke accessibility-problemer krævede manuel kontrol?
-![This is an alt text.](/images/manuelkontrol.png "This is a sample image.")
+![Billede af lighthouse analse resultater](/images/manuelkontrol.png "Billede af lighthouse analse resultater.")
 
 
 
@@ -1967,8 +1981,8 @@ og så ændrende jeg benefits div-tag til en aside.
 - [x] Dekorative billeder bruger `alt=""`.
 - [x] Anchor-links fungerer.
 - [x] Horiseon-logoet fungerer som link til `index.html`.
-- [ ] Links kan identificeres.
-- [ ] Farvekontrast er kontrolleret.
+- [x] Links kan identificeres.
+- [x] Farvekontrast er kontrolleret.
 - [ ] Tastaturtest er gennemført.
 - [ ] Keyboard-fokus er tydeligt.
 - [ ] Siden er testet ved 200 % zoom.
