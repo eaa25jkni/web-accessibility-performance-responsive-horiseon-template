@@ -1334,6 +1334,9 @@ lav filstørrelse
 acceptabel billedkvalitet
 ```
 
+## Vurdering
+Kvaliteren var god, så jeg prøvedet at se om jeg kunne komprimere billederne ydeligere, så de fyldte mindre. Det gjorde jeg så meget jeg kunne, uden jeg synes det gik ud over kvailiteten. 
+
 ---
 
 # Opgave 19 – Kør Lighthouse Performance igen
@@ -2134,17 +2137,26 @@ Efter:
 
 7. Hvilke billeder optimerede du?
 ```text
+Jeg optimere på alle billederne. De tre ikon billeder ændrede jeg bare dimensionerne, blev de blev 300x300 istedet for 1000x1000.
 
+Alle andre billeder, ændrede jeg først dimensionerne, så de blev en del mindre. Meget mere passende til web. 
+Derefter komprimerede jeg dem med https://www.websiteplanet.com/da/webtools/imagecompressor/. 
+Og til sidst konvertede dem til webp med https://cloudconvert.com/jpg-to-webp.
 ```
 
 
 8. Hvor meget blev filstørrelserne reduceret?
-```text
-Før: 
 
+| Billede                            | Dimensioner Før | Dimensioner Efter | Filstørrelse Før | Filstørrelse Efter |
+| ---------------------------------- | ------ | ----------: | -----------: | --------------------- |
+| `digital-marketing-meeting.jpg`       |    8688 × 5792    |      1500 × 1000       |      14,2 mb        |          236 kB             |
+| `search-engine-optimization.jpg`   |    7360 × 4912    |     500 × 334        |      14,9 mb        |           61 kB            |
+| `online-reputation-management.jpg` |   4404 × 2877     |      500 × 327       |      6,7 mb        |         47 kB           |
+| `social-media-marketing.jpg`       |    5000 × 3451    |      500 × 345       |       14,2 mb       |          80 kB             |
+| `brand-awareness.png`   |    1000 × 1000    |      1000 × 1000       |       63 kB        |            1 Kb           |
+| `cost-management.png` |    1000 × 1000    |      300 × 300       |       41 kB       |          10 kB             |
+| `lead-generation.png`       |   1000 × 1000    |      300 × 300       |      40 kB        |           6 kB            |
 
-
-```
 
 
 9. Hvilke elementer gjorde du til flex-containere?
@@ -2219,8 +2231,8 @@ Før gik teksten ud over deres bokse. Det skete fordi indholdet blev højere end
 - [x] Relevante billeder er konverteret til WebP.
 - [x] HTML-referencer er opdateret.
 - [x] Hero-billedets CSS-reference er kontrolleret.
-- [ ] Billedkvalitet er vurderet.
-- [ ] Network-panelet er anvendt til kontrol.
+- [x] Billedkvalitet er vurderet.
+- [x] Network-panelet er anvendt til kontrol.
 - [ ] Lighthouse Performance er kørt igen.
 - [ ] Performance-score er 90 eller højere.
 
