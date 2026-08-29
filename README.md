@@ -1426,6 +1426,21 @@ Undersøg:
 
 Dokumentér mindst tre problemer.
 
+## Problemer
+
+### Problem 1 - Header og links overskrider grænse. 
+![ankerlinks går ud over header](/readimg/opg20-p1.png "ankerlinks går ud over header")
+(Testet på 900px)
+
+### Problem 2 - Billeder og overskrift hopper ud af boks
+![Billeder og overskrift hopper ud af boks](/readimg/opg20-p2.png "Billeder og overskrift hopper ud af boks")
+(Testet på 320px)
+
+### Problem 3 - Indhold bliver for bredt til benefits boks og skaber vandret scroll
+![Indhold bliver for bredt til benefits boks](/readimg/opg20-p3.png "Indhold bliver for bredt til benefits boks")
+(Testet på 480px)
+
+
 ---
 
 ## Find det gamle layoutsystem
@@ -1444,7 +1459,26 @@ Undersøg, hvilke elementer disse regler forsøger at placere.
 
 ```text
 Hvilke elementer skal stå ved siden af hinanden?
+
+Linkene i navgationen skal stå ved siden af hinanden på desktop.
+Og de skal også stå ved siden af logoet-
+
+Content og benefits sektionerne skal stå ved siden af hinanden.
+
+Inde i hver content article skal billede <img> og tekst stå ved siden af hinanden.
+
+```
+
+```text
 Hvilke elementer skal stå under hinanden?
+
+Alle de overordnede elementer/sektioner i body skal stå under hinanden. header->hero->indhold->footer
+
+De tre articles i content sektionen skal stå under hinanden.
+
+Inde i benefits skal de forskellige articles stå under hinanden.
+Her skal indholdet i articles også stå under hinanden. altså h3, img og p.
+
 ```
 
 Før du skriver Flexbox, skal du forstå den ønskede struktur.
