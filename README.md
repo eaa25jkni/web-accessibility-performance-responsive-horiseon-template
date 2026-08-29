@@ -856,6 +856,23 @@ a:focus-visible {
 
 Tilpas løsningen til designet.
 
+## Ændringer
+
+### Før
+Navigationen virker fint med brug af tab. Man bliver også ført de rigtige steder hen. En forbedring der kunne laves er et det bliver endnu tydligere hvad link tab er på. Lige nu er det en meget tynd streg der er rundt om. Den er egenligt ok, men det kan godt blive tydeligere
+
+### Efter
+
+```css
+a:focus-visible {
+  outline: 4px solid currentColor;
+  outline-offset: 6px;
+}
+```
+
+Med dette stykke kode, har jeg lavet en tykkere og større streg rundt om markede.
+
+
 ---
 
 # Opgave 12 – Test zoom, reflow og faste højder
