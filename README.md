@@ -1346,8 +1346,8 @@ Kør Lighthouse med samme indstillinger som ved baseline.
 Notér:
 
 ```text
-Performance før: ______
-Performance efter: _____
+Performance før: ___73___
+Performance efter: __99___
 ```
 
 ### Mål
@@ -1357,6 +1357,11 @@ Performance: 90 eller højere
 ```
 
 Hvis scoren fortsat er lav, skal du læse Lighthouse-anbefalingerne og undersøge, hvilke ressourcer der stadig påvirker siden.
+
+## Score
+
+![performance score på 99](/readimg/performancescore-efter.png "performance score på 99")
+
 
 ---
 
@@ -2131,6 +2136,7 @@ Før:
 73
 
 Efter:
+99
 
 ```
 
@@ -2233,8 +2239,8 @@ Før gik teksten ud over deres bokse. Det skete fordi indholdet blev højere end
 - [x] Hero-billedets CSS-reference er kontrolleret.
 - [x] Billedkvalitet er vurderet.
 - [x] Network-panelet er anvendt til kontrol.
-- [ ] Lighthouse Performance er kørt igen.
-- [ ] Performance-score er 90 eller højere.
+- [x] Lighthouse Performance er kørt igen.
+- [x] Performance-score er 90 eller højere.
 
 ## DEL 3 – Responsive Webdesign
 
@@ -2310,6 +2316,13 @@ Accessibility før / efter
 Performance før / efter
 Responsive test ved flere viewport-bredder
 ```
+
+| Test                            | Før | Efter |
+| ---------------------------------- | ------ | ----------: | 
+| `Accessibility`       |    67    |      100       |   
+| `Performance`       |    73    |      99       | 
+| `Responsive test ved flere viewport-bredder`       |    x    |      x       |    
+
 
 Du skal kunne forklare mindst:
 
