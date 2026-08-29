@@ -1142,12 +1142,16 @@ Brug samme indstillinger ved før- og eftermålingen.
 Notér:
 
 ```text
-Performance før optimering: ______
+Performance før optimering: ___73___
 ```
 
 > Performance-scoren kan variere lidt mellem målinger. Brug derfor samme browser, samme Lighthouse-indstillinger og så vidt muligt samme testforhold ved før- og eftermålingen.
 
 Gem gerne et screenshot.
+
+![Performance score på 73](/images/performancescore-foer.png "Performance score på 73.")
+
+![Performance problemer](/images/performancescoreproblemer-foer-.png "Performance problemer")
 
 ---
 
