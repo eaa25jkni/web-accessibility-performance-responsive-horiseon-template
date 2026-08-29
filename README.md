@@ -2149,6 +2149,7 @@ Du skal herefter undersøge, om du også skal tilpasse:
 
 > Eksemplet er stilladsering og ikke nødvendigvis hele løsningen. Test din egen side og tilføj kun de regler, der er nødvendige.
 
+
 ---
 
 ## Test breakpointet
@@ -2355,6 +2356,7 @@ Og til sidst konvertede dem til webp med https://cloudconvert.com/jpg-to-webp.
 9. Hvilke elementer gjorde du til flex-containere?
 ```text
 
+
 ```
 
 
@@ -2366,12 +2368,28 @@ Og til sidst konvertede dem til webp med https://cloudconvert.com/jpg-to-webp.
 
 11. Hvilket breakpoint valgte du, og hvorfor valgte du netop dette?
 ```text
+Jeg valgte break pointe 760 px, fordi layoutet omkring denne skærmstørrelse ikke passe på indholdet. Det var specielt services boksene der gjorde mit udfald, da det var omkring de 760px, at indhold i dem, begyndte at stå mærkeligt.
+
+Derfor under 760px, har jeg valgt at main.content skal står som flex-direction: column;
+og at bla. mit problem med service boksens indhold, løses med fjerne float og sætte til dette:
+
+```css
+.services {
+    flex-direction: column;
+    padding: 32px;
+  }
+```
 
 ```
 
 
 12. Hvordan ændrer layoutet sig på en mobil skærm?
 ```text
+Alt indhold ligger sig som en lang kolonne. Så alle elementer ligger sig over hinanden.
+
+Det er lavet sådan, at når det bliver en mobil skærm, så ligger elementerne .marketing og .benefit sig efter hinanden, istedet for ved siden af hinanden. Det skaber en bedre brugeroplevelse, og man undgå vandret scroll. 
+
+Derudover så ved mobil skærm ligger nav sig under logo'et.
 
 ```
 
