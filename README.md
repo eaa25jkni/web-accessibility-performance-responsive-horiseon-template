@@ -911,6 +911,49 @@ min-height
 
 eller at lade indholdet bestemme højden.
 
+
+## Undersøgelse
+- Er al tekst stadig synlig?
+Alt teksten er stadig inden for skærmen. Dog er meget af teksten ikke læsbar mere, da den flyder ud af dens boks og henover andre elementer.
+
+
+- Løber tekst uden for bokse?
+Ja, teksten i content boksene løber ud over grænserne.
+
+I benefit søjlen holder teksten sig dog indenfor rammerne.
+
+
+- Overlapper elementer?
+Ja tekst, billeder osv overlapper hinanden i content sektionen nu.
+
+
+- Kan bokse vokse med indholdet?
+Som det er lige nu vokser boksene ikke med indholdet. Det kan dog fikses.
+
+
+- Opstår der unødvendig vandret scrolling?
+Ved 200% så nej. 
+Men hvis vi zoomer ydeligere ind til 250% opstår der faktisk en smule unødvenligt vandret scroll. 
+
+
+## Ændringer
+
+### Før
+Før var der brugt en fast højde på boksene, hvilket gjorde at de ikke vokser med indholdet. 
+
+```css
+height
+```
+
+
+### Efter
+Er der blevet brugt min-height på alle boksene.
+```css
+min-height
+```
+
+Så nu vokser boksen med indholdet.
+
 ---
 
 # Opgave 13 – Ryd op i CSS
@@ -2000,7 +2043,7 @@ og så ændrende jeg benefits div-tag til en aside.
 - [x] Horiseon-logoet fungerer som link til `index.html`.
 - [x] Links kan identificeres.
 - [x] Farvekontrast er kontrolleret.
-- [ ] Tastaturtest er gennemført.
+- [x] Tastaturtest er gennemført.
 - [ ] Keyboard-fokus er tydeligt.
 - [ ] Siden er testet ved 200 % zoom.
 - [ ] Faste højder er vurderet.
