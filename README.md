@@ -1301,6 +1301,15 @@ Hvis du optimerer hero-billedet, skal denne reference også opdateres.
 
 Brug browserens **Network-panel** til at kontrollere, at den nye fil faktisk indlæses.
 
+
+## Ændringer
+```css
+background-image: url("../images/digital-marketing-meeting.webp");
+```
+
+css opdateret, så den kalder på vores webp fil.
+
+
 ---
 
 # Opgave 18 – Kontrollér billedkvaliteten
@@ -2207,9 +2216,9 @@ Før gik teksten ud over deres bokse. Det skete fordi indholdet blev højere end
 - [x] Performance-baseline er dokumenteret.
 - [x] Billeddimensioner er undersøgt.
 - [x] Filstørrelser er undersøgt.
-- [ ] Relevante billeder er konverteret til WebP.
-- [ ] HTML-referencer er opdateret.
-- [ ] Hero-billedets CSS-reference er kontrolleret.
+- [x] Relevante billeder er konverteret til WebP.
+- [x] HTML-referencer er opdateret.
+- [x] Hero-billedets CSS-reference er kontrolleret.
 - [ ] Billedkvalitet er vurderet.
 - [ ] Network-panelet er anvendt til kontrol.
 - [ ] Lighthouse Performance er kørt igen.
