@@ -2126,6 +2126,9 @@ og så ændrende jeg benefits div-tag til en aside.
 
 5. Hvilke CSS-regler blev overflødige efter HTML-ændringerne?
 ```text
+Det var bla. css reglen .header h1 {...}. For jeg ændrede h1 til en p i logoet, hvilket betyder at den css ikke gælder mere, da den ikke kalder på noget mere. Jeg ændrede derfor reglen til .header p {...}. Så styler den det rigtige.
+
+Også reglen .header h1 .seo {...} skulle ændres til .header p .seo {...}
 
 ```
 
