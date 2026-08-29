@@ -1551,6 +1551,45 @@ Efter ændringen skal navigationen på større skærme fortsat:
 - have passende afstand mellem links
 - kunne bruges med tastatur
 
+
+## Ændringer
+
+### Før
+```css
+.header {
+        padding: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #255D79;
+        color: #ffffff;
+        
+    }
+
+.header nav {
+        padding-top: 15px;
+        margin-right: 20px;
+        float: right;
+     ...
+    }
+```
+.header nav havde float: right;
+
+### Efter
+
+Tilføjede følgende til .header
+```css
+.header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    ...      
+    }
+```
+
+slettede jeg float: right; fra .header nav {...}
+
+Nu har header layoutregler flexbox.
+
+
 ---
 
 # Opgave 22 – Organisér hovedindholdet før du bruger Flexbox
@@ -2281,7 +2320,7 @@ Før gik teksten ud over deres bokse. Det skete fordi indholdet blev højere end
 
 ## DEL 3 – Responsive Webdesign
 
-- [ ] Layoutet er analyseret i Device Toolbar.
+- [x] Layoutet er analyseret i Device Toolbar.
 - [ ] Headeren anvender et passende Flexbox-layout.
 - [ ] Hovedindholdet anvender et passende Flexbox-layout.
 - [ ] Overflødige floats er fjernet.
