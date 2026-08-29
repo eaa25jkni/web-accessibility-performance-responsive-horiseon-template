@@ -1256,6 +1256,31 @@ Du kan eksempelvis bruge:
 
 Du behøver ikke bruge terminalen.
 
+
+## Ændringer
+
+### Dimensioner
+Jeg ændrede først dimensioner på billederne. Hvor jeg scalerede dem ned, så de ik var helt så store. Det hjalp også på filstørrelsen.
+
+### Konvertering
+Jeg har brugt hjemmesiden https://cloudconvert.com/jpg-to-webp til at konvertere mine billeder til webp filer
+
+### Ændringer i html
+
+#### Før
+Bla. 
+```html
+<img src="/images/social-media-marketing.jpg" alt="Six people around a table with various social media symbols." class="float-left" />
+```
+
+#### Efter
+```html
+<img src="/images/social-media-marketing.webp" alt="Six people around a table with various social media symbols." class="float-left" />
+```
+
+Og jeg har selfølgelig også rettet html for de andre img det der er webp filen der bliver kaldt på.
+
+
 ---
 
 # Opgave 17 – Husk hero-billedet i CSS
@@ -2179,9 +2204,9 @@ Før gik teksten ud over deres bokse. Det skete fordi indholdet blev højere end
 
 ## DEL 2 – Web Performance
 
-- [ ] Performance-baseline er dokumenteret.
-- [ ] Billeddimensioner er undersøgt.
-- [ ] Filstørrelser er undersøgt.
+- [x] Performance-baseline er dokumenteret.
+- [x] Billeddimensioner er undersøgt.
+- [x] Filstørrelser er undersøgt.
 - [ ] Relevante billeder er konverteret til WebP.
 - [ ] HTML-referencer er opdateret.
 - [ ] Hero-billedets CSS-reference er kontrolleret.
