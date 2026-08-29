@@ -130,7 +130,7 @@ Inden du ændrer noget i koden, skal du måle sidens nuværende Accessibility-sc
 ```text
 Accessibility før forbedringer: __67___
 ```
-!["Screenshot af lighthouse analyse af Accessibility med en score på 67](/images/opg1a.png "Screenshot af lighthouse analyse af Accessibility med en score på 67")
+!["Screenshot af lighthouse analyse af Accessibility med en score på 67](/readimg/opg1a.png "Screenshot af lighthouse analyse af Accessibility med en score på 67")
 
 
 
@@ -163,7 +163,7 @@ Hvis du ændrer siden først, har du ingen baseline at sammenligne med.
 #### Før
 eksempel:
 ```html
-<img src="./images/search-engine-optimization.jpg"  class="float-left" />
+<img src="./readimg/search-engine-optimization.jpg"  class="float-left" />
 ```
 
 #### Efter
@@ -172,7 +172,7 @@ Tilføjet manglende alt tekster til hver img
 
 eksempel:
 ```html
-<img src="./images/search-engine-optimization.jpg" alt="På et skrivebord ligger en notesbord, hvor der på siden er tegnet en figur. Seo står i midten og rundt om der der tegnet kendetegn ved seo" class="float-left" />
+<img src="./readimg/search-engine-optimization.jpg" alt="På et skrivebord ligger en notesbord, hvor der på siden er tegnet en figur. Seo står i midten og rundt om der der tegnet kendetegn ved seo" class="float-left" />
 ```
 
 
@@ -180,11 +180,11 @@ eksempel:
 ### Farvekontrast
 
 #### Før
-![Screenshot af farvekontrast analyse lavet med strak værktøj før ændringer, som viser en dårlig score](/images/opg1farve-før.png "Screenshot af farvekontrast analyse lavet med strak værktøj før ændringer, som viser en dårlig score")
+![Screenshot af farvekontrast analyse lavet med strak værktøj før ændringer, som viser en dårlig score](/readimg/opg1farve-før.png "Screenshot af farvekontrast analyse lavet med strak værktøj før ændringer, som viser en dårlig score")
 
 Dårlig farvekontrast før ændringer. Den blå baggrundsfarve og den hvide tekst 
 
-![Screenshot af strak værktøj forslag til farve med en bedre kontrast](/images/opg1farve-efter.png "Screenshot af strak værktøj forslag til farve med en bedre kontrast")
+![Screenshot af strak værktøj forslag til farve med en bedre kontrast](/readimg/opg1farve-efter.png "Screenshot af strak værktøj forslag til farve med en bedre kontrast")
 
 starks forslag til en farve, som har en god kontrast med teksten
 
@@ -213,7 +213,7 @@ Jeg har gjort teksten er blevet større og tilføjet en display flex og et gap.
 
 
 ### Score efter ændringer
-![Screenshot af lighthouse analyse efter ændringer. Scoren er på 100 nu](/images/opg1score-efter.png "Screenshot af lighthouse analyse efter ændringer. Scoren er på 100 nu")
+![Screenshot af lighthouse analyse efter ændringer. Scoren er på 100 nu](/readimg/opg1score-efter.png "Screenshot af lighthouse analyse efter ændringer. Scoren er på 100 nu")
 
 
 ---
@@ -810,13 +810,13 @@ Forsøg at bevare Horiseons visuelle identitet.
 I opg 1 var en af problemere i min lighthouse analyse jeg fandt farvekonstrasten. Her ændrede jeg farven på baggrunden.
 
 ### Nav
-![Farvekonstarst før og efter på nav.](/images/opg10nav.png "Farvekonstarst før og efter på nav.")
+![Farvekonstarst før og efter på nav.](/readimg/opg10nav.png "Farvekonstarst før og efter på nav.")
 
 ### Content sektion
-![Farvekonstarst før og efter på content sektion.](/images/opg10content.png "Farvekonstarst før og efter på content sektion.")
+![Farvekonstarst før og efter på content sektion.](/readimg/opg10content.png "Farvekonstarst før og efter på content sektion.")
 
 ### Benefits søjle
-![Farvekonstarst før og efter på benefits søjle.](/images/opg10benefits.png "Farvekonstarst før og efter på benefits søjle.")
+![Farvekonstarst før og efter på benefits søjle.](/readimg/opg10benefits.png "Farvekonstarst før og efter på benefits søjle.")
 
 Her ændre jeg farven på fonten til sort så det passer til ikonerne. Deridover har jeg gjort baggrunden til en lysere blå.
 
@@ -1149,9 +1149,9 @@ Performance før optimering: ___73___
 
 Gem gerne et screenshot.
 
-![Performance score på 73](/images/performancescore-foer.png "Performance score på 73.")
+![Performance score på 73](/readimg/performancescore-foer.png "Performance score på 73.")
 
-![Performance problemer](/images/performancescoreproblemer-foer-.png "Performance problemer")
+![Performance problemer](/readimg/performancescoreproblemer-foer-.png "Performance problemer")
 
 ---
 
@@ -1200,6 +1200,19 @@ Notér gerne resultaterne i en lille tabel.
 | `search-engine-optimization.jpg`   |        |             |              |                       |
 | `online-reputation-management.jpg` |        |             |              |                       |
 | `social-media-marketing.jpg`       |        |             |              |                       |
+
+
+## Notater
+
+| Billede                            | Format | Dimensioner | Filstørrelse | Relevant at optimere? |
+| ---------------------------------- | ------ | ----------: | -----------: | --------------------- |
+| `digital-marketing-meeting.jpg`       |    JPEG    |      8688 × 5792       |      14,2 mb        |          Ja, meget store dimensioner og filstørrelse             |
+| `search-engine-optimization.jpg`   |    JPEG    |     7360 × 4912        |      14,9 mb        |           Ja, billedet et ekstremt stort i forhold til den størrelse den bliver vist på hjemmesiden            |
+| `online-reputation-management.jpg` |   JPEG     |      4404 × 2877       |      6,7 mb        |         Ja             |
+| `social-media-marketing.jpg`       |    JPEG    |      5000 × 3451       |       14,2 mb       |          Ja, filen fylder ekstremt meget, og har meget store dimensioner             |
+| `brand-awareness.png`   |    png    |      1000 × 1000       |       63 kB        |            Ikke nødvendigt, men dimensioner kan godt formindskes           |
+| `cost-management.png` |    png    |     1000 × 1000        |       41 kB       |          Ikke nødvendigt, men dimensioner kan godt formindskes             |
+| `lead-generation.png`       |    png    |     1000 × 1000        |      40 kB        |           Ikke nødvendigt, men dimensioner kan godt formindskes            |
 
 ---
 
@@ -2077,6 +2090,10 @@ og så ændrende jeg benefits div-tag til en aside.
 
 6. Hvad var Performance-score før og efter?
 ```text
+Før:
+73
+
+Efter:
 
 ```
 
@@ -2089,6 +2106,9 @@ og så ændrende jeg benefits div-tag til en aside.
 
 8. Hvor meget blev filstørrelserne reduceret?
 ```text
+Før: 
+
+
 
 ```
 
