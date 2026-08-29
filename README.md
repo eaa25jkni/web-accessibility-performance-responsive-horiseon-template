@@ -1837,6 +1837,27 @@ Du skal altså ikke forsøge at løse hele siden med én enkelt flex-container.
 
 I de næste opgaver arbejder du videre med `.marketing` og `aside.benefits`.
 
+## Ændringer
+Har tilføjer dette css:
+
+```css
+main.content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 1.2rem;
+        margin: 50px;
+    }
+
+    main.content > h1 {
+        flex-basis: 100%;
+    }
+```
+
+Så nu er main.content flexbox
+
+
 ---
 
 # Opgave 24 – Organisér `.marketing` med Flexbox
