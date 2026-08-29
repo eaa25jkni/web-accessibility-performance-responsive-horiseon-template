@@ -2355,7 +2355,13 @@ Og til sidst konvertede dem til webp med https://cloudconvert.com/jpg-to-webp.
 
 9. Hvilke elementer gjorde du til flex-containere?
 ```text
+Header satte jeg til flex, og med flex-wrap: wrap;
 
+main.content har jeg også sat display: flex; med en flex-wrap: wrap; på.
+
+.marketing har jeg også sat display: flex; med en flex-direction: column; på.
+
+.benefits har jeg sat display: flex; og flex-direction: column; på. Og flex: 0 1 300px; som bestemmer at benefits ikke må vokse, men må gerne blive mindre. og bredden er 300 px.
 
 ```
 
