@@ -2367,7 +2367,29 @@ main.content har jeg også sat display: flex; med en flex-wrap: wrap; på.
 
 
 10. Hvilke gamle floats kunne fjernes?
+
 ```text
+Jeg har fjernet floast fra .header nav og .benefits, og her blev der istedet tilføjet flexbox.
+
+I media quyer kunne jeg fjerne begge floats. Da jeg gerne ville have indholdet i services til at stp under hinanden. Derfor er det sat til:
+
+  ```css
+    .services {
+        flex-direction: column;
+        padding: 32px;
+      }
+  ```
+
+  og floats er sat til:
+  ```css
+    .float-left {
+            float: none;
+        }
+
+        .float-right {
+            float: none;
+        }
+  ```
 
 ```
 
