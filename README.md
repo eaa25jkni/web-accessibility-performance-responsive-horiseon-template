@@ -1915,6 +1915,55 @@ Det er mere fleksibelt end eksempelvis:
 
 Det gør det lettere at få servicekolonnen til visuelt at flugte med Benefits-kolonnen uden at bruge en "magisk" procentværdi.
 
+## Ændringer 
+
+jeg ændrede først navnet på css fra:
+```css
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
+        margin-bottom: 20px;
+        padding: 50px;
+        min-height: 300px;
+        max-width: 1100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #025b92;
+        color: #ffffff;
+    }
+```
+
+Til
+```css
+.services {
+        flex: 1;
+
+        margin-bottom: 20px;
+        padding: 50px;
+        min-height: 300px;
+        max-width: 1100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #025b92;
+        color: #ffffff;
+    }
+```
+
+Hvor jeg også fik tilføjet en flex: 1; så hver af de tre serviceområder får mulighed for at dele den ledige plads i `.marketing`
+
+Jeg ændrede også css navnene til 
+```css
+.services img {
+        max-height: 200px;
+    }
+```
+
+og 
+
+```css
+.services h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+```
+
+
 ---
 
 # Opgave 25 – Brug Flexbox i `aside.benefits`
