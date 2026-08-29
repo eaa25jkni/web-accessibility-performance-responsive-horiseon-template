@@ -2015,6 +2015,7 @@ og så ændrende jeg benefits div-tag til en aside.
 
 13. Hvad sker der ved 200 % zoom?
 ```text
+Før gik teksten ud over deres bokse. Det skete fordi indholdet blev højere end boksen faste højde på 300px. Så ved at ændre boksenes css fra height til min-height løser vi faktisk problemet. For nu har alle bokse en min-height på 300px, og kan nu dermed vokse med indholdet.
 
 ```
 
@@ -2044,9 +2045,9 @@ og så ændrende jeg benefits div-tag til en aside.
 - [x] Links kan identificeres.
 - [x] Farvekontrast er kontrolleret.
 - [x] Tastaturtest er gennemført.
-- [ ] Keyboard-fokus er tydeligt.
-- [ ] Siden er testet ved 200 % zoom.
-- [ ] Faste højder er vurderet.
+- [x] Keyboard-fokus er tydeligt.
+- [x] Siden er testet ved 200 % zoom.
+- [x] Faste højder er vurderet.
 - [ ] CSS er ryddet op.
 - [ ] HTML er valideret.
 - [ ] Lighthouse Accessibility er kørt igen.
