@@ -1657,16 +1657,41 @@ Det giver mulighed for at style dem samlet i stedet for at skrive den samme layo
 Før du bruger Flexbox, skal du kunne svare på:
 
 ```text
-Hvad hører sammen?
+- Hvad hører sammen?
+De tre services hører sammen. Det er derfor vi har samlet dem i en section med class="marketing".
 
-Hvilke elementer skal ligge ved siden af hinanden?
+De tre article i benefits hører også sammen.
 
-Hvilke elementer skal ligge under hinanden?
+.marketing sektionen og .benefits hører også sammen. 
 
-Hvilke elementer skal være direkte children i en flex-container?
+
+- Hvilke elementer skal ligge ved siden af hinanden?
+Det skal .marketing og benefits.
+
+
+- Hvilke elementer skal ligge under hinanden?
+det skal h1, .main-indhold, og footer. 
+
+
+- Hvilke elementer skal være direkte children i en flex-container?
+
+I min wrapper .main-indhold bliver .maketing og .benefits children.
+
+De tre articles i marketing skal være children i en flex-container som bliver .marketing.
+
+Det samme med de tre article i .benefits.
+
 ```
 
 > Du må gerne tilføje classes eller en simpel wrapper i HTML'en, når det gør layoutet mere logisk og CSS'en lettere at vedligeholde.
+
+## Tilføjelse
+
+Jeg har rykket class="content" op til main.
+
+
+Giver alle tre article i .marketing classen services.
+
 
 ---
 
