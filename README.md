@@ -2288,6 +2288,25 @@ Test også ved:
 200 % zoom
 ```
 
+
+## Sammenligning (mangler referende billede)
+Jeg har desværre ikke adgang til refernece billedet, så jeg kan ikke sammenligne de to sider.
+
+<br>
+
+## Kontrolléring og test
+
+Efter at have testet siden på de forskellige skærmstørrelse, kan jeg konkludere at det hele virker og ser fint ud. Siden virker både til desktop og mobil. 
+
+Der kommer ingen unødvendig vandret scroll eller overlappende indhold. Alt holder sig indenfor skærmen. 
+
+Navigationen virker både med mus eller med tab. Og keyboard focus er stadig synligt.
+
+Alt indhold tilpasser sig også ved 200% zoom.
+
+
+
+
 ---
 
 # Opgave 29 – Afsluttende Lighthouse-test
