@@ -2605,8 +2605,46 @@ Responsive test ved flere viewport-bredder
 Du skal kunne forklare mindst:
 
 - tre accessibility-forbedringer
+
+#### 1. primært landmark 
+```text
+Der manglede et primært landmark til at starte med. Det har betydet at for f.eks screenreaders har manglet layout struktur og ikke har vist hvad det vigtigste indhold på websiden var. Derfor tilføjede jeg et main-tag i html'en. Nu ved den hvad sidens primære indhold er.
+```
+
+#### 2. Farvekontrast
+```text
+Før var farvekontrasten for lav benefits søljen. En for lav konstrast, kan gøre elementer svære at se eller læse. Derfor er det vigtigt med en højt farvekontrast for accessibility. Jeg ændrede derfor baggrundsfarve i benefit til en lysere blå og tekstfarven til sort. Dermed fik jeg en kontrast der levede op til AAA.
+```
+
+#### 3. Alt-antributter
+```text
+Før var der ingen alt-antributter, hvilket betød at skærmlæsere ikke kunne aflæse billederne. Derfor har jeg tilføjet meningsfulde alt-antributter til billederne. Så nu kan skærmlæsere aflæse billederne. 
+```
+
+<br>
+
 - to performance-forbedringer
+#### 1. Billeder skalret, komprimeret og lavet til Webp
+```text
+Før fyldte billeder rigtigt meget. Flere af dem fyldte mange mb, og det påvirkede web performance ved at gøre den langsommere. Ved at skalere billeder til mere passende størrelser, komprimere dem og lave dem til webp filer, så fik jeg formindsket filstørrelse gevaldigt. 
+```
+
+#### 2. x
+```text
+```
+
+<br>
+
 - to responsive design-valg
+#### 1. x
+```text
+```
+
+#### 2. x
+```text
+```
+
+
 
 ---
 
