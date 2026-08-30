@@ -2217,6 +2217,26 @@ flex-wrap
 
 eller ændring af `flex-direction` kan være relevant.
 
+## Undersøgelse
+
+### På 320px skærmstørrelse
+![Header ved 320px skærmstørrelse](/readimg/opg27-320.png "Header ved 320px skærmstørrelse.")
+De tre links står tæt, og skriftstørrelse er lidt for stor. Det bliver svært at se at det er tre links og ikke fire, fordi 'Online reputation management fylder to rækker.
+
+<br>
+
+### På 480px skærmstørrelse
+![Header ved 320px skærmstørrelse](/readimg/opg27-480.png "Header ved 320px skærmstørrelse.")
+
+## Ændringer
+Efter undersøgelse fandt jeg ud af at linksne wrapper fint rundt om hinanden, da der allerede er flex-wrap: wrap; på .header nav ul {...}.
+
+De vigtigste ændringer der skulle til var et større mellemrum mellem linksne. jeg satte derfor gap på gap: 16px; i #nav-liste {} (media quyer). Og jeg fjernede også margin-left fra 25px til 0px når skærmen er mindre end 760px. 
+
+![Header ved 320px skærmstørrelse efter ændringer](/readimg/opg27-320efter.png "Header ved 320px skærmstørrelse efter ændringer.")
+(320px)
+
+
 ---
 
 # Opgave 28 – Sammenlign med referencebilledet og gennemfør afsluttende responsive test
@@ -2483,7 +2503,7 @@ Før gik teksten ud over deres bokse. Det skete fordi indholdet blev højere end
 - [x] Siden er testet ved 200 % zoom.
 - [x] Faste højder er vurderet.
 - [x] CSS er ryddet op.
-- [ ] HTML er valideret.
+- [x] HTML er valideret.
 - [x] Lighthouse Accessibility er kørt igen.
 - [x] Accessibility-score er 100.
 
@@ -2503,13 +2523,13 @@ Før gik teksten ud over deres bokse. Det skete fordi indholdet blev højere end
 ## DEL 3 – Responsive Webdesign
 
 - [x] Layoutet er analyseret i Device Toolbar.
-- [ ] Headeren anvender et passende Flexbox-layout.
-- [ ] Hovedindholdet anvender et passende Flexbox-layout.
-- [ ] Overflødige floats er fjernet.
-- [ ] Billeder er responsive.
-- [ ] Problematiske faste størrelser er vurderet.
-- [ ] Der er tilføjet ét relevant CSS breakpoint med en media query (flere er tilladt, hvis de faktisk er nødvendige).
-- [ ] Navigationen fungerer på små skærme.
+- [x] Headeren anvender et passende Flexbox-layout.
+- [x] Hovedindholdet anvender et passende Flexbox-layout.
+- [x] Overflødige floats er fjernet.
+- [x] Billeder er responsive.
+- [x] Problematiske faste størrelser er vurderet.
+- [x] Der er tilføjet ét relevant CSS breakpoint med en media query (flere er tilladt, hvis de faktisk er nødvendige).
+- [x] Navigationen fungerer på små skærme.
 - [ ] Siden er testet ved 320 px.
 - [ ] Siden er testet ved 480 px.
 - [ ] Siden er testet ved 768 px.
@@ -2579,7 +2599,7 @@ Responsive test ved flere viewport-bredder
 | ---------------------------------- | ------ | ----------: | 
 | `Accessibility`       |    67    |      100       |   
 | `Performance`       |    73    |      99       | 
-| `Responsive test ved flere viewport-bredder`       |    x    |      x       |    
+| `Responsive test ved flere viewport-bredder`       |    Ikke responsiv til andre skærmstørrelser    |      x       |    
 
 
 Du skal kunne forklare mindst:

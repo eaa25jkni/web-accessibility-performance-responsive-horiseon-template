@@ -45,6 +45,8 @@ p {
 
     .header nav ul {
         list-style-type: none; 
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .header nav ul li {
@@ -55,6 +57,7 @@ p {
     a {
         color: #ffffff;
         text-decoration: none;
+        
     }
 
     a:focus-visible {
@@ -99,12 +102,7 @@ p {
       
     }
     
-    /* .content {
-        width: 75%;
-        display: inline-block;
-        margin-left: 20px;
-    } */
-
+  
     .content h1 {
         font-size: 48px;
         margin-top: 4px;
@@ -112,13 +110,6 @@ p {
     }
 
 
-    /* .main-indhold {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 24px;
-        
-    } */
 
     main.content > h1 {
         flex-basis: 100%;
@@ -145,15 +136,7 @@ p {
     }
 
 
-    /* .search-engine-optimization, .online-reputation-management, .social-media-marketing {
-        margin-bottom: 20px;
-        padding: 50px;
-        min-height: 300px;
-        max-width: 1100px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: #025b92;
-        color: #ffffff;
-    } */
+    
 
     .services img {
         max-height: 200px;
@@ -161,9 +144,6 @@ p {
     }
     
 
-    /* .search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
-        max-height: 200px;
-    } */
 
 
     .services h2 {
@@ -171,10 +151,7 @@ p {
         font-size: 36px;
     }
 
-    /* .search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
-        margin-bottom: 20px;
-        font-size: 36px;
-    } */
+    
 
 
 
@@ -252,7 +229,18 @@ p {
   .header nav {
     float: none;
     margin-right: 0;
+
   }
+
+  #nav-liste {
+    gap: 16px;
+  }
+
+
+  .header nav ul li {
+        margin-left: 0px;
+    }
+
 
   main.content {
     flex-direction: column;
