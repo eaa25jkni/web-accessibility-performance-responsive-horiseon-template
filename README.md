@@ -2317,8 +2317,8 @@ Registrér:
 
 | Måling        | Før | Efter |
 | ------------- | --: | ----: |
-| Accessibility |     |       |
-| Performance   |     |       |
+| Accessibility |  67   |   100   |
+| Performance   |  73   |   98   |
 
 ### Målsætning
 
@@ -2549,13 +2549,13 @@ Før gik teksten ud over deres bokse. Det skete fordi indholdet blev højere end
 - [x] Problematiske faste størrelser er vurderet.
 - [x] Der er tilføjet ét relevant CSS breakpoint med en media query (flere er tilladt, hvis de faktisk er nødvendige).
 - [x] Navigationen fungerer på små skærme.
-- [ ] Siden er testet ved 320 px.
-- [ ] Siden er testet ved 480 px.
-- [ ] Siden er testet ved 768 px.
-- [ ] Siden er testet ved 1024 px.
-- [ ] Siden er testet ved 1440 px.
-- [ ] Der er ingen unødvendig vandret scrolling.
-- [ ] Siden fungerer ved 200 % zoom.
+- [x] Siden er testet ved 320 px.
+- [x] Siden er testet ved 480 px.
+- [x] Siden er testet ved 768 px.
+- [x] Siden er testet ved 1024 px.
+- [x] Siden er testet ved 1440 px.
+- [x] Der er ingen unødvendig vandret scrolling.
+- [x] Siden fungerer ved 200 % zoom.
 - [ ] Resultatet er sammenlignet med referencebilledet.
 
 ---
@@ -2618,7 +2618,7 @@ Responsive test ved flere viewport-bredder
 | ---------------------------------- | ------ | ----------: | 
 | `Accessibility`       |    67    |      100       |   
 | `Performance`       |    73    |      99       | 
-| `Responsive test ved flere viewport-bredder`       |    Ikke responsiv til andre skærmstørrelser    |      x       |    
+| `Responsive test ved flere viewport-bredder`       |    Ikke responsiv til andre skærmstørrelser    |      Responsiv til alle skærmstørrelser      |    
 
 
 Du skal kunne forklare mindst:
