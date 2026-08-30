@@ -2624,24 +2624,31 @@ Før var der ingen alt-antributter, hvilket betød at skærmlæsere ikke kunne a
 <br>
 
 - to performance-forbedringer
-#### 1. Billeder skalret, komprimeret og lavet til Webp
+#### 1. Billeder skalleret i dimensioner.
 ```text
-Før fyldte billeder rigtigt meget. Flere af dem fyldte mange mb, og det påvirkede web performance ved at gøre den langsommere. Ved at skalere billeder til mere passende størrelser, komprimere dem og lave dem til webp filer, så fik jeg formindsket filstørrelse gevaldigt. 
+Mange af billeder havde meget store dimensioner i forhold til, hvad de reelt bliver vist på websiden. Derfor skallerede jeg alle billederne til passende størrelse.  
 ```
 
-#### 2. x
+#### 2. Billeder komprimeret og lavet til Webp
 ```text
+Før fyldte billeder rigtigt meget med deres filstørrelser. Flere af dem fyldte mange mb, og det påvirkede web performance ved at gøre den langsommere. Ved at skalere billeder til mere passende størrelser, komprimere dem og lave dem til webp filer, så fik jeg formindsket filstørrelse gevaldigt. Og dermed er der. mindre siden skal indlæse, og dermed kan gøre det hurtigere.
 ```
 
 <br>
 
 - to responsive design-valg
-#### 1. x
+#### 1. Flexbox
 ```text
+Et valg jeg tog for at gøre siden mere reponsiv, var at style flexbox på flere af html-elementerne. Det var bla. på selve main, så hele hjemmesiden indhold kom i en flexbox, hvor den derudover også wrapper om sig selv, når indholdet er for bredt til wrapperen. På den måde bliver den automatisk responsiv.
+
+Andre steder jeg brugte det var bla. i .marketing, hvor jeg satte flex-direction til column. Og det samme med benefits. Så står indholdet altid under hinanden i deres containers.
+
+
 ```
 
-#### 2. x
+#### 2. Breakpoints med media quyer
 ```text
+Selvom jeg har brugt flexbox med wrap, var siden ikke fuld responsiv. På de små skærme passede indholdet ikke. Derfor indførte jeg et breakpoints med media quyer på 760px. Derfor stylede jeg så de forskellige elementer med passende styling til mobilstørrelser.
 ```
 
 
