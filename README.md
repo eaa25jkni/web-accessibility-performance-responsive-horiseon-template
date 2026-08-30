@@ -2171,6 +2171,23 @@ Under breakpointet
 
 Hvis ét breakpoint løser problemerne tilfredsstillende, er det nok.
 
+## Ændringer 
+
+Jeg satte et breakpoint på 760 px. Da det var der websiden layout begyndte at opføre sig underligt. Det var her websidens indhold blev for stort til skærmen.
+
+Derfor tilføjede jeg en media quyer, hvori jeg tilpassede stylingen til flere af elementerne. Så når skærmen bliver mindre end 760 px, tilpasser layoutet sig.
+```css
+@media (max-width: 760px) {
+  .header {
+    flex-direction: column;
+  }
+
+  ...
+}
+```
+
+
+
 ---
 
 # Opgave 27 – Test navigationen på små skærme
@@ -2284,6 +2301,7 @@ Besvar kort:
 Før var scoren 67 og efter 100
 ```
   
+<br>  
 
 2. Hvilke accessibility-problemer fandt Lighthouse?
 ```text
@@ -2294,11 +2312,12 @@ Der var fire problemer:
   4. Dokumentet har ikke et primært landmark
 ```
 
+<br>
 
 3. Hvilke accessibility-problemer krævede manuel kontrol?
-![Billede af lighthouse analse resultater](/images/manuelkontrol.png "Billede af lighthouse analse resultater.")
+![Billede af lighthouse analse resultater](/readimg/manuelkontrol.png "Billede af lighthouse analse resultater.")
 
-
+<br>
 
 4. Hvilke semantiske HTML-ændringer foretog du?
 ```text
@@ -2309,6 +2328,8 @@ Jeg ændrende div-tagget for content til en section, og de tre elementer med div
 og så ændrende jeg benefits div-tag til en aside.
 ```
 
+<br>
+
 5. Hvilke CSS-regler blev overflødige efter HTML-ændringerne?
 ```text
 Det var bla. css reglen .header h1 {...}. For jeg ændrede h1 til en p i logoet, hvilket betyder at den css ikke gælder mere, da den ikke kalder på noget mere. Jeg ændrede derfor reglen til .header p {...}. Så styler den det rigtige.
@@ -2316,7 +2337,7 @@ Det var bla. css reglen .header h1 {...}. For jeg ændrede h1 til en p i logoet,
 Også reglen .header h1 .seo {...} skulle ændres til .header p .seo {...}
 
 ```
-
+<br>
 
 6. Hvad var Performance-score før og efter?
 ```text
@@ -2327,7 +2348,7 @@ Efter:
 99
 
 ```
-
+<br>
 
 7. Hvilke billeder optimerede du?
 ```text
@@ -2337,7 +2358,7 @@ Alle andre billeder, ændrede jeg først dimensionerne, så de blev en del mindr
 Derefter komprimerede jeg dem med https://www.websiteplanet.com/da/webtools/imagecompressor/. 
 Og til sidst konvertede dem til webp med https://cloudconvert.com/jpg-to-webp.
 ```
-
+<br>
 
 8. Hvor meget blev filstørrelserne reduceret?
 
@@ -2351,7 +2372,7 @@ Og til sidst konvertede dem til webp med https://cloudconvert.com/jpg-to-webp.
 | `cost-management.png` |    1000 × 1000    |      300 × 300       |       41 kB       |          10 kB             |
 | `lead-generation.png`       |   1000 × 1000    |      300 × 300       |      40 kB        |           6 kB            |
 
-
+<br>
 
 9. Hvilke elementer gjorde du til flex-containere?
 ```text
@@ -2372,6 +2393,7 @@ main.content har jeg også sat display: flex; med en flex-wrap: wrap; på.
 Jeg har fjernet floast fra .header nav og .benefits, og her blev der istedet tilføjet flexbox.
 
 I media quyer kunne jeg fjerne begge floats. Da jeg gerne ville have indholdet i services til at stp under hinanden. Derfor er det sat til:
+```
 
   ```css
     .services {
@@ -2379,8 +2401,9 @@ I media quyer kunne jeg fjerne begge floats. Da jeg gerne ville have indholdet i
         padding: 32px;
       }
   ```
-
+```text
   og floats er sat til:
+```
   ```css
     .float-left {
             float: none;
@@ -2391,12 +2414,14 @@ I media quyer kunne jeg fjerne begge floats. Da jeg gerne ville have indholdet i
         }
   ```
 
-```
+
+<br>
 
 
 11. Hvilket breakpoint valgte du, og hvorfor valgte du netop dette?
+
 ```text
-Jeg valgte break pointe 760 px, fordi layoutet omkring denne skærmstørrelse ikke passe på indholdet. Det var specielt services boksene der gjorde mit udfald, da det var omkring de 760px, at indhold i dem, begyndte at stå mærkeligt.
+Jeg valgte breakpoint 760 px, fordi layoutet omkring denne skærmstørrelse ikke passe på indholdet. Det var specielt services boksene der gjorde mit udfald, da det var omkring de 760px, at indhold i dem, begyndte at stå mærkeligt.
 
 Derfor under 760px, har jeg valgt at main.content skal står som flex-direction: column;
 og at bla. mit problem med service boksens indhold, løses med fjerne float og sætte til dette:
@@ -2408,8 +2433,7 @@ og at bla. mit problem med service boksens indhold, løses med fjerne float og s
   }
 ```
 
-```
-
+<br>
 
 12. Hvordan ændrer layoutet sig på en mobil skærm?
 ```text
@@ -2421,6 +2445,7 @@ Derudover så ved mobil skærm ligger nav sig under logo'et.
 
 ```
 
+<br>
 
 13. Hvad sker der ved 200 % zoom?
 ```text
